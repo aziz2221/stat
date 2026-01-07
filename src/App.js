@@ -2,6 +2,8 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
 const StudentStatistics = () => {
+  const [minScore, setMinScore] = useState(0);
+
   const students = [
     { name: "آدم زارعي", reading: 17.00, writing: 16.00, composition: 15.50, math: 16.00, science: 14.50 },
     { name: "آدم علبوشي", reading: 15.50, writing: 16.00, composition: 13.50, math: 11.50, science: 15.00 },
