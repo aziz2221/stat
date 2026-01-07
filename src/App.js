@@ -2,8 +2,6 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
 const StudentStatistics = () => {
-  const [minScore, setMinScore] = useState(0);
-
   const students = [
     { name: "آدم زارعي", reading: 17.00, writing: 16.00, composition: 15.50, math: 16.00, science: 14.50 },
     { name: "آدم علبوشي", reading: 15.50, writing: 16.00, composition: 13.50, math: 11.50, science: 15.00 },
@@ -203,14 +201,10 @@ const StudentStatistics = () => {
                   <p className="text-xs sm:text-sm md:text-base mb-1 sm:mb-2 opacity-90">أعلى علامة</p>
                   <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">{maxScore.toFixed(2)}</p>
                 </div>
-                
-
-                    <div className="bg-gradient-to-br from-red-500 to-red-600 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-white text-center shadow-lg">
+                <div className="bg-gradient-to-br from-red-500 to-red-600 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-white text-center shadow-lg">
                   <p className="text-xs sm:text-sm md:text-base mb-1 sm:mb-2 opacity-90">أدنى علامة</p>
-                  <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">{maxScore.toFixed(2)}</p>
+                  <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">{minScore.toFixed(2)}</p>
                 </div>
-            
-
                 <div className="bg-gradient-to-br from-gray-700 to-gray-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-white text-center shadow-lg">
                   <p className="text-xs sm:text-sm md:text-base mb-1 sm:mb-2 opacity-90">عدد التلاميذ</p>
                   <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">{students.length}</p>
