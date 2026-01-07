@@ -235,11 +235,11 @@ const StudentStatistics = () => {
                         </Pie>
                         <Tooltip 
                           contentStyle={{ 
-                            backgroundColor: '#1e293b', 
+                            backgroundColor: '#ffffffff', 
                             border: 'none', 
                             borderRadius: '12px',
                             padding: '8px 12px',
-                            color: 'white',
+                            color: 'black',
                             fontWeight: 'bold',
                             fontSize: '12px'
                           }}
